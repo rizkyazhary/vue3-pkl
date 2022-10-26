@@ -45,10 +45,15 @@
 
                     <ul id="dashboard" class="collapse submenu list-unstyled" data-bs-parent="#sidebar">
                         <li>
+                            <router-link to="/water-health-monitoring" @click="toggleMobileMenu">
+                                {{ $t('Monitoring Kualitas Air') }}
+                            </router-link>
+                        </li>
+                        <!-- <li>
                             <router-link to="/" @click="toggleMobileMenu">
                                 {{ $t('sales') }}
                             </router-link>
-                        </li>
+                        </li> -->
                         <li>
                             <router-link to="/index2" @click="toggleMobileMenu">
                                 {{ $t('analytics') }}

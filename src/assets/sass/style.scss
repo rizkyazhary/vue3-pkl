@@ -2263,3 +2263,79 @@ td.no {
         font-size: 0.7em;
     }
 }
+
+#sidebar ul.menu-categories ul.submenu > li a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px 10px 48px;
+  padding-left: 24px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #515365;
+}
+.freeze3col table {
+  border-spacing: 0;
+  border: 2px solid #ebebeb;
+}
+
+.freeze3col {
+  // overflow: scroll;
+  // overflow-x: scroll
+  
+}
+
+.freeze3col table {
+  border-spacing: 0;
+}
+
+.freeze3col th {
+
+  z-index: 3;
+}
+.freeze3col td {
+  border-left: none;
+  border-right: 2px solid #ebedf2;
+  border-bottom: 2px solid #ebedf2;
+  padding: 5px;
+  width: 80px;
+  min-width: 80px;
+  z-index: 3;
+}
+
+.freeze3col tr:not(:nth-child(2)) th:nth-child(1),
+.freeze3col td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  width: 150px;
+  min-width: 150px;
+  // background: #ebebeb;
+}
+.freeze3col tr th{
+  // background: #ebebeb !important;
+
+}
+.freeze3col tr:not(:nth-child(2)) th:nth-child(2),
+.freeze3col  td:nth-child(2) {
+  position: sticky;
+  /* 1st cell left/right padding + 1st cell width + 1st cell left/right border width */
+  /* 0 + 5 + 150 + 5 + 1 */
+  left: 149px;
+  width: 100px;
+  min-width: 50px;
+  // background: #ebebeb;
+}
+
+.freeze3col tr:not(:nth-child(0)) td:nth-child(1),
+.freeze3col td:nth-child(2) {
+  // background: #eaeaea;
+}
+
+.freeze3col th:nth-child(1),
+.freeze3col th:nth-child(2) {
+  z-index: 2;
+}
+
+.widget.widget-statistics .widget-content {
+  padding-left: 12px;
+}

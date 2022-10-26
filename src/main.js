@@ -53,5 +53,9 @@ import 'vue3-form-wizard/dist/style.css';
 import appSetting from './app-setting';
 window.$appSetting = appSetting;
 window.$appSetting.init();
+window.$ = window.jQuery = require('jquery');
 
-app.use(store).use(router).use(i18n).use(PerfectScrollbar).use(VueNouislider).use(Maska).use(ClientTable).use(vue3JsonExcel).use(VueFormWizard).use(head).mount('#app');
+import VNum from "v3-num";
+
+
+app.use(store).use(router).use(i18n).use(PerfectScrollbar).use(VueNouislider).use(Maska).use(ClientTable).use(vue3JsonExcel).use(VueFormWizard).use(head).use(VNum).mount('#app');
