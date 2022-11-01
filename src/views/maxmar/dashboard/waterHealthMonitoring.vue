@@ -26,13 +26,13 @@
                 <polyline points="6 9 12 15 18 9"></polyline>
               </svg>
             </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddlSettings">
+            <!-- <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddlSettings">
               <li><a class="dropdown-item" data-value="Settings" href="javascript:void(0);">Settings</a></li>
               <li><a class="dropdown-item" data-value="Mail" href="javascript:void(0);">Mail</a></li>
               <li><a class="dropdown-item" data-value="Print" href="javascript:void(0);">Print</a></li>
               <li><a class="dropdown-item" data-value="Download" href="javascript:void(0);">Download</a></li>
               <li><a class="dropdown-item" data-value="Share" href="javascript:void(0);">Share</a></li>
-            </ul>
+            </ul> -->
           </div>
         </li>
       </ul>
@@ -95,8 +95,8 @@
                         <td :class="column.parent?column.parent:column.code" v-for="column, index in columns2"
                           tabindex="0" class="" style="text-align: center">
 
-                          {{ isNaN(item[column.code]?.value.replace(',', '.')) ? item[column.code]?.value :
-                          formatter.format(item[column.code]?.value.replace(',', '.')) }}
+                          {{ column.code == 'doc' ? item[column.code]?.value : (isNaN(item[column.code]?.value.replace(',', '.')) ? item[column.code]?.value :
+                          formatter.format(item[column.code]?.value.replace(',', '.'))) }}
                         </td>
                       </tr>
                     </template>
@@ -133,7 +133,7 @@ const columns1 = [
 {
   parent: '',
   code: 'nama_kolam',
-  title: 'Nama Kolam',
+  title: 'Kolam',
   colspan: 1,
   rowspan: 2
 },

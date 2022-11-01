@@ -380,9 +380,9 @@
                             </svg>
                         </a>
                         <ul class="collapse submenu list-unstyled">
-                            <li>
+                            <!-- <li>
                                 <router-link to="/"> {{ $t('sales') }} </router-link>
-                            </li>
+                            </li> -->
                             <li>
                                 <router-link to="/index2">{{ $t('analytics') }}</router-link>
                             </li>
